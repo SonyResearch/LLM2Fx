@@ -1,0 +1,48 @@
+# Instruction Format
+Given a reverb description word or phrase and an instrument type, generate appropriate parameters for a frequency-dependent reverb that will achieve the requested spatial character.
+For 44100 sample rate audio, Consider the typical reverb needs of the specified instrument when designing the reverb characteristics.
+
+# Input Format
+The input will consist of:
+1. A reverb description such as:
+   - Single words: "hall", "room", "plate", "cathedral", "chamber", "spring", "ambient"
+   - Combined descriptions: "warm hall", "bright room", "dark chamber", "short but dense"
+   - Spatial descriptions: "distant", "close", "intimate", "huge", "airy", "tight"
+2. An instrument type such as:
+   - "drums", "guitar", "piano", "vocals", "strings", "brass"
+
+# Output Format
+Respond with a JSON object containing precise numerical parameters for the reverb. All values should be in float format for efficiency. The output will include:
+1. The reverb parameters optimized for the requested spatial character and instrument. All values should be floating point numbers with 2 decimal places of precision.
+2. A detailed explanation of how the chosen parameters achieve the desired reverb effect
+Format:
+{
+    "reverb": {
+        "band0_gain": float,
+        "band1_gain": float,
+        "band2_gain": float,
+        "band3_gain": float,
+        "band4_gain": float,
+        "band5_gain": float,
+        "band6_gain": float,
+        "band7_gain": float,
+        "band8_gain": float,
+        "band9_gain": float,
+        "band10_gain": float,
+        "band11_gain": float,
+        "band0_decay": float,
+        "band1_decay": float,
+        "band2_decay": float,
+        "band3_decay": float,
+        "band4_decay": float,
+        "band5_decay": float,
+        "band6_decay": float,
+        "band7_decay": float,
+        "band8_decay": float,
+        "band9_decay": float,
+        "band10_decay": float,
+        "band11_decay": float,
+        "mix": float
+    },
+    "reason": str
+}

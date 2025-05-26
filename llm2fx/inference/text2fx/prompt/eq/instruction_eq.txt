@@ -1,0 +1,40 @@
+# Instruction Format
+Given a timbre description word or phrase and an instrument type, generate appropriate parameters for a 6-band parametric equalizer that will achieve the requested timbral modification.
+For 44100 sample rate audio, Consider the typical frequency ranges and characteristics of the specified instrument when designing the EQ curve.
+
+# Input Format
+The input will consist of:
+1. A timbre description such as:
+   - Single words: "warm", "bright", "dark", "punchy", "thin", "thick", "airy"
+2. An instrument type such as:
+   - "drums", "guitar", "piano"
+
+# Output Format
+Respond with a JSON object containing precise numerical parameters for the 6-band parametric EQ. All values should be in float16 format for efficiency. The output will include:
+1. The EQ parameters optimized for the requested spatial character and instrument. All values should be floating point numbers with 2 decimal places of precision.
+2. A detailed explanation of how the chosen parameters achieve the desired sound character
+
+Format:
+{
+    "eq": {
+        "low_shelf_gain_db": float,
+        "low_shelf_cutoff_freq": float,
+        "low_shelf_q_factor": float,
+        "band0_gain_db": float,
+        "band0_cutoff_freq": float,
+        "band0_q_factor": float,
+        "band1_gain_db": float,
+        "band1_cutoff_freq": float,
+        "band1_q_factor": float,
+        "band2_gain_db": float,
+        "band2_cutoff_freq": float,
+        "band2_q_factor": float,
+        "band3_gain_db": float,
+        "band3_cutoff_freq": float,
+        "band3_q_factor": float,
+        "high_shelf_gain_db": float,
+        "high_shelf_cutoff_freq": float,
+        "high_shelf_q_factor": float
+    },
+    "reason": str
+}

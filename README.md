@@ -57,7 +57,7 @@ You can listen to the generated audio examples in the `./outputs/text2fx/{model_
 
 | Instrument | Timbre | Audio Example |
 |------------|--------|---------------|
-| Guitar | Church | [🎵 Listen to example](./outputs/text2fx/mistral_7b/reverb/guitar/church/audio/example.mp3) |
+| Guitar | Church | [![Audio Example](https://img.shields.io/badge/🎵-Play%20Audio-blue)](./outputs/text2fx/mistral_7b/reverb/guitar/church/audio/582cf088-4941-4453-9d90-2c75dc76bbd5.mp3) |
 
 
 ```json

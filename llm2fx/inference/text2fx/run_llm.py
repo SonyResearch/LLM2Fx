@@ -16,9 +16,9 @@ from llm2fx.common_utils.dasp_utils import parametric_eq, noise_shaped_reverbera
 parser = argparse.ArgumentParser(description='Generate audio effect chain parameters from text description')
 parser.add_argument('--output_path', type=str, default="./outputs/llm2fx", help='Path to save the output JSON file')
 parser.add_argument('--fx_type', type=str, default="reverb", help='Type of dsp', choices=["eq", "reverb"])
-parser.add_argument('--use_incontext', type=bool, default=False, help='Use incontext')
+parser.add_argument('--use_incontext', type=bool, default=True, help='Use incontext')
 parser.add_argument('--inst_type', type=str, default="guitar", help='Instrument type')
-parser.add_argument('--timbre_word', type=str, default="underwater", help='Timbre word')
+parser.add_argument('--timbre_word', type=str, default="church", help='Timbre word')
 parser.add_argument('--model_name', type=str, default='mistral_7b',help='Model name', choices=["llama3_1b", "llama3_3b", "llama3_8b", "llama3_70b", "mistral_7b"])
 parser.add_argument('--max_new_tokens', type=int, default=2048, help='Max new tokens')
 parser.add_argument('--device', type=str, default="cuda", help='Device')
@@ -46,9 +46,8 @@ INCONTEXT_PATH = os.path.join(os.path.dirname(__file__), "incontext")
 PROMPT_PATH = os.path.join(os.path.dirname(__file__), "prompt")
 SYSTEM_PROMPT = """
 You are an expert audio engineer and music producer specializing in sound design and audio processing.
-Your task is to translate descriptive timbre words into specific audio effect parameters that will achieve the desired sound character.
-You have deep knowledge of equalizers and understand how they shape timbre.
-You MUST respond with ONLY a valid JSON object. Do not include any explanatory text, markdown formatting, or code blocks. Your entire response should parse as valid JSON.
+Your task is to translate descriptive timbre words into specific audio effects parameters that will achieve the desired sound character.
+You have deep knowledge of equalizers and understand how they shape timbre. You MUST respond with ONLY a valid JSON object.
 """
 
 def load_llama_model(model_name):
@@ -64,23 +63,6 @@ def load_llama_model(model_name):
     model = AutoModelForCausalLM.from_pretrained(model_name, cache_dir=args.cache_dir, torch_dtype=torch.bfloat16, quantization_config=quantization_config)
     tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir=args.cache_dir)
     return model, tokenizer
-
-def load_incontext_example(fx_type, target_word):
-    incontext_db = []
-    for inst in os.listdir(f"{INCONTEXT_PATH}/{fx_type}"):
-        for word in os.listdir(f"{INCONTEXT_PATH}/{fx_type}/{inst}"):
-            if word == target_word:
-                continue # DON'T CHEAT!
-            for fname in os.listdir(f"{INCONTEXT_PATH}/{fx_type}/{inst}/{word}"):
-                json_data = json.load(open(f"{INCONTEXT_PATH}/{fx_type}/{inst}/{word}/{fname}", "r"))
-                json_data["query"] = f"please design audio effect chain for {word} sound for {inst}."
-                incontext_db.append(json_data)
-    sampled_incontext_db = random.sample(incontext_db, 5)
-    incontext_example = ""
-    for data in sampled_incontext_db:
-        query = data.pop("query")
-        incontext_example += f"QUESTION: {query}\n ANSWER: {data}\n\n"
-    return incontext_example
 
 @torch.no_grad()
 def llm_inference(model, tokenizer, input_text):
@@ -153,33 +135,58 @@ def apply_reverb(audio, sr, prediction, inst_type, reverb_word, model_name, outp
     except Exception as e:
         print(f"Failed to apply reverb: {e}")
 
+
+def get_dsp_function(args):
+    with open(f"{INCONTEXT_PATH}/functions/dsp_{args.fx_type}.py", "r") as f:
+        dsp_function_code = f.read()
+    return dsp_function_code
+
+def get_dsp_feature(args):
+    from incontext.audio.dsp_feature import extract_audio_features
+    dsp_feature = extract_audio_features(f"{AUDIO_PATH}/{args.inst_type}.wav")
+    return dsp_feature
+
+def get_incontext_example(args):
+    incontext_db = []
+    for fname in os.listdir(f"{INCONTEXT_PATH}/examples"):
+        icl_fx_type, icl_inst_type, icl_timbre_word = fname.replace(".json", "").split("_")
+        if icl_timbre_word == args.timbre_word:
+            continue # DON'T CHEAT!
+        if icl_fx_type != args.fx_type:
+            continue # Focus on the target fx_type
+        json_data = json.load(open(f"{INCONTEXT_PATH}/examples/{fname}", "r"))
+        incontext_example = f"QUESTION: please design a {icl_fx_type} audio effects for a {icl_timbre_word} {icl_inst_type} sound.\n ANSWER: {json_data}"
+        incontext_db.append(incontext_example)
+    sampled_incontext_db = random.sample(incontext_db, 5)
+    incontext_example = ""
+    for example in sampled_incontext_db:
+        incontext_example += f"{example}\n\n"
+    return incontext_example
+
 def main():
-    with open(f"{PROMPT_PATH}/{args.fx_type}/instruction_{args.fx_type}.txt", "r") as f:
+    with open(f"{PROMPT_PATH}/instruction_{args.fx_type}.txt", "r") as f:
         instruction = f.read()
-    with open(f"{PROMPT_PATH}/{args.fx_type}/dsp_{args.fx_type}.py", "r") as f:
-        dsp_function = f.read()
     model, tokenizer = load_llama_model(model_name)
     model.eval()
     model.to(args.device)
     audio, sr = torchaudio.load(f"{AUDIO_PATH}/{args.inst_type}.wav")
-    dsp_feature = json.load(open(f"{INCONTEXT_PATH}/audio/{args.inst_type}.json", "r"))
-    user_query = f"QUESTION: please design a {args.fx_type} audio effect for a {args.timbre_word} {args.inst_type} sound.\n ANSWER:"
+    user_query = f"QUESTION: please design a {args.fx_type} audio effects for a {args.timbre_word} {args.inst_type} sound.\n ANSWER:"
     output_path = f"{args.output_path}/{args.model_name}/{args.fx_type}/{args.inst_type}/{args.timbre_word}"
     os.makedirs(f"{output_path}/json", exist_ok=True)
-    # Add Inference Time Information
-    incontext_example = load_incontext_example(args.fx_type, args.timbre_word)
     input_text = f"{instruction}"
-    if args.use_incontext:
-        input_text += f"\n\n signal processing function\n\n {dsp_function}" # add dsp function
-        input_text += f"\n\n input audio feature\n\n {dsp_feature}" # add dsp feature
-        input_text += f"\n\n {incontext_example}\n\n {user_query}" # add incontext examples
-    else:
-        input_text += f"\n\n {user_query}" # zeroshot case
+    if args.use_incontext: # fewshot case
+        dsp_function_code = get_dsp_function(args)
+        dsp_feature = get_dsp_feature(args)
+        incontext_example = get_incontext_example(args)
+        input_text += f"\n\n # Signal processing function\n\n {dsp_function_code}" # add dsp function
+        input_text += f"\n\n # Input audio feature\n\n {dsp_feature}" # add dsp feature
+        input_text += f"\n\n # Incontext examples\n\n {incontext_example}" # add incontext examples
+    input_text += f"\n\n {user_query}"
+    print(input_text)
     str_uuid = str(uuid4())
     response = llm_inference(model, tokenizer, input_text)
     response = response.replace("```json", "").replace("```", "").strip()
     print(response)
-    print("--------------------------------")
     json_data = json.loads(response)
     if args.fx_type == "eq":
         apply_eq(audio, sr, json_data, args.inst_type, args.timbre_word, model_name, output_path, str_uuid)

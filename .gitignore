@@ -44,8 +44,6 @@ Thumbs.db
 # Project specific
 /data/
 *.wav
-*.mp3
-*.json
 *.pt
 *.pth
 logs/

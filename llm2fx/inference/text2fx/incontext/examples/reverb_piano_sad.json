@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": -0.2,
+        "band1_gain": -0.1,
+        "band2_gain": 0.0,
+        "band3_gain": 0.0,
+        "band4_gain": 0.0,
+        "band5_gain": 0.0,
+        "band6_gain": 0.0,
+        "band7_gain": -0.1,
+        "band8_gain": -0.2,
+        "band9_gain": -0.1,
+        "band10_gain": 0.0,
+        "band11_gain": 0.0,
+        "band0_decay": 2.0,
+        "band1_decay": 1.5,
+        "band2_decay": 1.5,
+        "band3_decay": 1.5,
+        "band4_decay": 1.5,
+        "band5_decay": 1.5,
+        "band6_decay": 1.5,
+        "band7_decay": 1.5,
+        "band8_decay": 2.0,
+        "band9_decay": 2.0,
+        "band10_decay": 1.5,
+        "band11_decay": 1.5,
+        "mix": 0.7
+    },
+    "reason": "A sad piano sound requires a reverb that enhances the low-mids and low frequencies to give a melancholic feel, while also having a longer decay to make the sound feel more solemn. The higher frequencies are attenuated to reduce brightness and maintain focus on the melancholic character."
+}

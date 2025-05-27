@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.0,
+        "band1_gain": 0.0,
+        "band2_gain": 0.0,
+        "band3_gain": 0.0,
+        "band4_gain": 0.0,
+        "band5_gain": 0.0,
+        "band6_gain": 0.0,
+        "band7_gain": 0.0,
+        "band8_gain": 0.0,
+        "band9_gain": 0.0,
+        "band10_gain": 0.0,
+        "band11_gain": 0.0,
+        "band0_decay": 0.1,
+        "band1_decay": 0.1,
+        "band2_decay": 0.1,
+        "band3_decay": 0.1,
+        "band4_decay": 0.1,
+        "band5_decay": 0.1,
+        "band6_decay": 0.1,
+        "band7_decay": 0.1,
+        "band8_decay": 0.1,
+        "band9_decay": 0.1,
+        "band10_decay": 0.1,
+        "band11_decay": 0.1,
+        "mix": 0.8
+    },
+    "reason": "Creating an echo effect for piano, using a short decay time to simulate quick reflections and a modest mix level to maintain clarity and space."
+}

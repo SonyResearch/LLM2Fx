@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": 3.0,
+        "low_shelf_cutoff_freq": 200.0,
+        "low_shelf_q_factor": 1.5,
+        "band0_gain_db": -2.0,
+        "band0_cutoff_freq": 600.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": 2.0,
+        "band1_cutoff_freq": 1500.0,
+        "band1_q_factor": 2.0,
+        "band2_gain_db": -1.0,
+        "band2_cutoff_freq": 2500.0,
+        "band2_q_factor": 0.5,
+        "band3_gain_db": 0.0,
+        "band3_cutoff_freq": 5000.0,
+        "band3_q_factor": 1.0,
+        "high_shelf_gain_db": 0.0,
+        "high_shelf_cutoff_freq": 8000.0,
+        "high_shelf_q_factor": 1.5
+    },
+    "reason": "To create a warm sound for guitar, the low shelf filter is boosted at 200 Hz to add richness and warmth to the lower frequencies. The first band is a cut at 600 Hz to reduce muddiness, followed by a boost at 1500 Hz to emphasize the lower mid-range. A cut at 2500 Hz in the second band removes harshness, while the third band maintains a neutral response. The high shelf filter is flat to avoid adding any unwanted brightness."
+}

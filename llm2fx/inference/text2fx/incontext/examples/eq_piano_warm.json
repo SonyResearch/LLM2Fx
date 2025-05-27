@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": 3.0,
+        "low_shelf_cutoff_freq": 20.0,
+        "low_shelf_q_factor": 0.5,
+        "band0_gain_db": -2.0,
+        "band0_cutoff_freq": 50.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": -1.0,
+        "band1_cutoff_freq": 250.0,
+        "band1_q_factor": 1.2,
+        "band2_gain_db": 0.0,
+        "band2_cutoff_freq": 1000.0,
+        "band2_q_factor": 0.8,
+        "band3_gain_db": 0.0,
+        "band3_cutoff_freq": 3000.0,
+        "band3_q_factor": 1.5,
+        "high_shelf_gain_db": 0.0,
+        "high_shelf_cutoff_freq": 12000.0,
+        "high_shelf_q_factor": 1.0
+    },
+    "reason": "To create a warm sound for piano, we boost the low-end frequencies to increase fullness and richness, while cutting the higher frequencies to reduce harshness. The low shelf emphasizes frequencies below 20 Hz, providing a deep, resonant sound. The high-end cut reduces shrillness and excessive brightness."
+}

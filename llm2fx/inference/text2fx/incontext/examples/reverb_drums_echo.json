@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.0,
+        "band1_gain": 0.0,
+        "band2_gain": 0.0,
+        "band3_gain": 0.0,
+        "band4_gain": 0.0,
+        "band5_gain": 0.0,
+        "band6_gain": 0.0,
+        "band7_gain": 0.0,
+        "band8_gain": 0.5,
+        "band9_gain": 1.0,
+        "band10_gain": 1.0,
+        "band11_gain": 0.5,
+        "band0_decay": 0.1,
+        "band1_decay": 0.1,
+        "band2_decay": 0.1,
+        "band3_decay": 0.1,
+        "band4_decay": 0.1,
+        "band5_decay": 0.1,
+        "band6_decay": 0.1,
+        "band7_decay": 0.1,
+        "band8_decay": 0.7,
+        "band9_decay": 0.9,
+        "band10_decay": 0.9,
+        "band11_decay": 0.7,
+        "mix": 0.8
+    },
+    "reason": "Echo drums sound is characterized by a strong focus on high frequencies, along with a short attack and a gradually lengthening decay. This reverb design emphasizes high frequencies by boosting bands 8-11, while keeping the low and mid frequencies flat. The decay times for these high frequency bands are longer than those of the lower bands, creating a sense of an echo. The mix level is set to 0.8 to ensure a balanced level between the dry and wet signals."
+}

@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": 0.0,
+        "low_shelf_cutoff_freq": 200.0,
+        "low_shelf_q_factor": 0.5,
+        "band0_gain_db": -6.0,
+        "band0_cutoff_freq": 600.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": -2.0,
+        "band1_cutoff_freq": 1200.0,
+        "band1_q_factor": 2.0,
+        "band2_gain_db": 2.0,
+        "band2_cutoff_freq": 2400.0,
+        "band2_q_factor": 1.0,
+        "band3_gain_db": 4.0,
+        "band3_cutoff_freq": 4000.0,
+        "band3_q_factor": 0.5,
+        "high_shelf_gain_db": 0.0,
+        "high_shelf_cutoff_freq": 12000.0,
+        "high_shelf_q_factor": 2.0
+    },
+    "reason": "To achieve a harsh sound for guitar, the EQ cuts low frequencies to reduce warmth and bass, applies a broad boost at mid-range frequencies to emphasize harshness, and adds a high shelf boost to bring out any sharpness and sibilance in the upper frequencies."
+}

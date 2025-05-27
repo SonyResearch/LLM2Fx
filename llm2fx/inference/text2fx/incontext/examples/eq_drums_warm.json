@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": 3.0,
+        "low_shelf_cutoff_freq": 80.0,
+        "low_shelf_q_factor": 1.0,
+        "band0_gain_db": -1.0,
+        "band0_cutoff_freq": 200.0,
+        "band0_q_factor": 2.0,
+        "band1_gain_db": -0.5,
+        "band1_cutoff_freq": 400.0,
+        "band1_q_factor": 3.0,
+        "band2_gain_db": 0.0,
+        "band2_cutoff_freq": 800.0,
+        "band2_q_factor": 2.0,
+        "band3_gain_db": 0.0,
+        "band3_cutoff_freq": 1600.0,
+        "band3_q_factor": 3.0,
+        "high_shelf_gain_db": -1.0,
+        "high_shelf_cutoff_freq": 6000.0,
+        "high_shelf_q_factor": 1.0
+    },
+    "reason": "To create a warm sound for drums, the equalizer is designed to emphasize the low and mid frequencies that contribute to warmth and richness. The low shelf boost at 80 Hz adds depth and body, while the bands 0 and 1 cuts at 200 Hz and 400 Hz reduce mud and boxiness. The high-shelf cut at 6000 Hz reduces harshness and sibilance, creating a warm and inviting drum sound."
+}

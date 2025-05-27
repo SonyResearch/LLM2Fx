@@ -36,6 +36,8 @@ python llm2fx/inference/text2fx/run_llm.py
     --inst_type guitar
     --use_incontext True
 ```
+
+```
 Parameters:
 - `--fx_type`: Effect type (`eq`, `reverb`)
 - `--model_name`: LLM model (`llama3_1b`, `llama3_3b`, `llama3_8b`, `mistral_7b`)

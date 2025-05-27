@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": 6.0,
+        "low_shelf_cutoff_freq": 80.0,
+        "low_shelf_q_factor": 0.8,
+        "band0_gain_db": 3.0,
+        "band0_cutoff_freq": 200.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": 3.0,
+        "band1_cutoff_freq": 500.0,
+        "band1_q_factor": 1.2,
+        "band2_gain_db": 0.0,
+        "band2_cutoff_freq": 1000.0,
+        "band2_q_factor": 1.5,
+        "band3_gain_db": -1.0,
+        "band3_cutoff_freq": 3000.0,
+        "band3_q_factor": 1.0,
+        "high_shelf_gain_db": -4.0,
+        "high_shelf_cutoff_freq": 8000.0,
+        "high_shelf_q_factor": 0.8
+    },
+    "reason": "A heavy sound for guitar is achieved by emphasizing the lower frequencies to add weight and punchiness, while reducing high frequencies to minimize harshness. The low shelf boost adds low-end fullness, while the band gains enhance the mid frequencies. The high shelf cut reduces brightness, making the sound more focused and heavy."
+}

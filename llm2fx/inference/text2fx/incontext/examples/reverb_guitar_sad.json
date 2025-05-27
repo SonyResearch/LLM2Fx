@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.0,
+        "band1_gain": -0.1,
+        "band2_gain": -0.2,
+        "band3_gain": -0.3,
+        "band4_gain": -0.4,
+        "band5_gain": -0.5,
+        "band6_gain": -0.3,
+        "band7_gain": -0.2,
+        "band8_gain": -0.1,
+        "band9_gain": 0.0,
+        "band10_gain": 0.1,
+        "band11_gain": 0.2,
+        "band0_decay": 1.5,
+        "band1_decay": 2.0,
+        "band2_decay": 2.5,
+        "band3_decay": 3.0,
+        "band4_decay": 3.5,
+        "band5_decay": 4.0,
+        "band6_decay": 4.5,
+        "band7_decay": 5.0,
+        "band8_decay": 5.5,
+        "band9_decay": 6.0,
+        "band10_decay": 6.5,
+        "band11_decay": 7.0,
+        "mix": 0.7
+    },
+    "reason": "A sad sound for guitar often requires a more ambient, spacious, and dark reverb. This design emphasizes the low-mids and high-end frequencies while reducing the overall gain in the mid-range frequencies. The decay time is longer to create a more atmospheric and emotional effect."
+}

@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.0,
+        "band1_gain": 0.1,
+        "band2_gain": 0.2,
+        "band3_gain": 0.3,
+        "band4_gain": 0.3,
+        "band5_gain": 0.2,
+        "band6_gain": 0.1,
+        "band7_gain": 0.05,
+        "band8_gain": 0.02,
+        "band9_gain": 0.01,
+        "band10_gain": 0.01,
+        "band11_gain": 0.01,
+        "band0_decay": 0.1,
+        "band1_decay": 0.2,
+        "band2_decay": 0.3,
+        "band3_decay": 0.4,
+        "band4_decay": 0.5,
+        "band5_decay": 0.6,
+        "band6_decay": 0.7,
+        "band7_decay": 0.8,
+        "band8_decay": 0.9,
+        "band9_decay": 1.0,
+        "band10_decay": 1.1,
+        "band11_decay": 1.2,
+        "mix": 0.7
+    },
+    "reason": "An echo effect for guitar is achieved by emphasizing the higher frequencies with higher gain values, while keeping the lower frequencies minimal to create a sense of space and ambiance. The shorter decay times help maintain the echo effect and prevent the sound from becoming too muddy or washed out."
+}

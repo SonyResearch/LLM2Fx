@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.01,
+        "band1_gain": 0.02,
+        "band2_gain": 0.04,
+        "band3_gain": 0.06,
+        "band4_gain": 0.08,
+        "band5_gain": 0.1,
+        "band6_gain": 0.12,
+        "band7_gain": 0.14,
+        "band8_gain": 0.16,
+        "band9_gain": 0.18,
+        "band10_gain": 0.2,
+        "band11_gain": 0.22,
+        "band0_decay": 3.5,
+        "band1_decay": 3.0,
+        "band2_decay": 2.5,
+        "band3_decay": 2.0,
+        "band4_decay": 1.5,
+        "band5_decay": 1.2,
+        "band6_decay": 1.0,
+        "band7_decay": 0.8,
+        "band8_decay": 0.6,
+        "band9_decay": 0.4,
+        "band10_decay": 0.2,
+        "band11_decay": 0.1,
+        "mix": 0.8
+    },
+    "reason": "The reverb for a church sound is designed to create a spacious, cathedral-like atmosphere. The gain values increase with frequency to simulate the resonance of a large space, while the decay times decrease with frequency to accurately represent the natural decay of sound in such a space. The mix level is set to achieve a balanced blend between the dry signal and the reverb."
+}

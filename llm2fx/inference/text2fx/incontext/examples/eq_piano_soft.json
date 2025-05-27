@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": -2.0,
+        "low_shelf_cutoff_freq": 100.0,
+        "low_shelf_q_factor": 1.5,
+        "band0_gain_db": 0.0,
+        "band0_cutoff_freq": 200.0,
+        "band0_q_factor": 3.0,
+        "band1_gain_db": -1.0,
+        "band1_cutoff_freq": 500.0,
+        "band1_q_factor": 1.5,
+        "band2_gain_db": 0.0,
+        "band2_cutoff_freq": 800.0,
+        "band2_q_factor": 1.5,
+        "band3_gain_db": -1.0,
+        "band3_cutoff_freq": 1200.0,
+        "band3_q_factor": 2.0,
+        "high_shelf_gain_db": -2.0,
+        "high_shelf_cutoff_freq": 8000.0,
+        "high_shelf_q_factor": 2.0
+    },
+    "reason": "To create a soft sound for piano, the EQ parameters reduce high-frequency content and reduce the low-mid range. This reduces brightness and harshness, creating a more subtle and softer sound."
+}

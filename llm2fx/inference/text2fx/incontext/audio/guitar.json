@@ -1,0 +1,9 @@
+{
+    "sample_rate": 44100,
+    "rms_energy": 0.126,
+    "crest_factor": 6.091,
+    "dynamic_spread": 0.312,
+    "spectral_centroid": 461.47,
+    "spectral_flatness": 0.001,
+    "spectral_bandwidth": 718.456
+}

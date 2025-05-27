@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.0,
+        "band1_gain": 0.1,
+        "band2_gain": 0.2,
+        "band3_gain": 0.3,
+        "band4_gain": 0.3,
+        "band5_gain": 0.2,
+        "band6_gain": 0.1,
+        "band7_gain": 0.0,
+        "band8_gain": 0.0,
+        "band9_gain": 0.0,
+        "band10_gain": 0.0,
+        "band11_gain": 0.0,
+        "band0_decay": 3.5,
+        "band1_decay": 2.0,
+        "band2_decay": 1.5,
+        "band3_decay": 1.2,
+        "band4_decay": 1.0,
+        "band5_decay": 1.0,
+        "band6_decay": 1.2,
+        "band7_decay": 1.5,
+        "band8_decay": 2.0,
+        "band9_decay": 3.0,
+        "band10_decay": 4.0,
+        "band11_decay": 5.0,
+        "mix": 0.8
+    },
+    "reason": "The parameters are designed to create a cathedral-like reverb effect suitable for a guitar. Lower frequencies are boosted to emphasize the body of the guitar, while higher frequencies are attenuated to reduce harshness. The longer decay times simulate the long reverberation typical of a large, open space."
+}

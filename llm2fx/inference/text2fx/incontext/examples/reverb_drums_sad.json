@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.1,
+        "band1_gain": 0.15,
+        "band2_gain": 0.1,
+        "band3_gain": 0.1,
+        "band4_gain": 0.1,
+        "band5_gain": 0.05,
+        "band6_gain": 0.03,
+        "band7_gain": 0.02,
+        "band8_gain": 0.01,
+        "band9_gain": 0.005,
+        "band10_gain": 0.002,
+        "band11_gain": 0.0,
+        "band0_decay": 1.8,
+        "band1_decay": 1.5,
+        "band2_decay": 1.2,
+        "band3_decay": 1.0,
+        "band4_decay": 0.8,
+        "band5_decay": 0.6,
+        "band6_decay": 0.4,
+        "band7_decay": 0.2,
+        "band8_decay": 0.1,
+        "band9_decay": 0.05,
+        "band10_decay": 0.02,
+        "band11_decay": 0.01,
+        "mix": 0.8
+    },
+    "reason": "The reverb settings create a sense of emptiness and sorrow, with lower gain values for the higher frequency bands to reduce the brightness of the sound. The decay times are set to longer values to create a sense of space, with the lowest frequency bands decaying slightly faster than the higher ones to maintain clarity. The mix is set to 0.8 to allow the dry sound to be present and the reverb to be more subtle."
+}

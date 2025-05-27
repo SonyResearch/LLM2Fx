@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": 3.0,
+        "low_shelf_cutoff_freq": 80.0,
+        "low_shelf_q_factor": 2.0,
+        "band0_gain_db": -2.0,
+        "band0_cutoff_freq": 200.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": 0.0,
+        "band1_cutoff_freq": 500.0,
+        "band1_q_factor": 1.0,
+        "band2_gain_db": 2.0,
+        "band2_cutoff_freq": 1500.0,
+        "band2_q_factor": 1.5,
+        "band3_gain_db": 4.0,
+        "band3_cutoff_freq": 3000.0,
+        "band3_q_factor": 2.0,
+        "high_shelf_gain_db": -1.0,
+        "high_shelf_cutoff_freq": 8000.0,
+        "high_shelf_q_factor": 1.0
+    },
+    "reason": "To achieve a heavy sound for piano, the EQ emphasizes low-mid and high frequencies. The low shelf boost around 80 Hz adds weight, while the band gains around 200 Hz to 3000 Hz boost the low-mid and high-mid frequencies, providing a full and rich timbre. A slight cut in the high shelf reduces harshness, creating a heavy and impactful sound."
+}

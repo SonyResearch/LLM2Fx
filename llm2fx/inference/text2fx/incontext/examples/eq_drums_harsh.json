@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": 3.0,
+        "low_shelf_cutoff_freq": 60.0,
+        "low_shelf_q_factor": 1.5,
+        "band0_gain_db": -2.0,
+        "band0_cutoff_freq": 120.0,
+        "band0_q_factor": 2.0,
+        "band1_gain_db": -1.0,
+        "band1_cutoff_freq": 300.0,
+        "band1_q_factor": 3.0,
+        "band2_gain_db": 0.0,
+        "band2_cutoff_freq": 600.0,
+        "band2_q_factor": 1.0,
+        "band3_gain_db": -3.0,
+        "band3_cutoff_freq": 2000.0,
+        "band3_q_factor": 2.0,
+        "high_shelf_gain_db": 2.0,
+        "high_shelf_cutoff_freq": 7000.0,
+        "high_shelf_q_factor": 1.5
+    },
+    "reason": "Achieved a harsh drum sound by applying a low-shelf boost around 60Hz with a narrow Q-factor to emphasize the low-end body and add a punchy and aggressive sound. A notch at around 120Hz reduces excessive resonance, and a low-gain band at 300Hz provides clarity. The band at 600Hz reduces the mid-low frequencies to add punchiness, while the band at 2000Hz reduces the high-mids to reduce sibilance and harshness. The high-shelf boost at 7000Hz adds brightness and clarity to the overall sound."
+}

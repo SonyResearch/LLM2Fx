@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": -3.0,
+        "low_shelf_cutoff_freq": 120.0,
+        "low_shelf_q_factor": 0.5,
+        "band0_gain_db": 1.0,
+        "band0_cutoff_freq": 200.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": 3.0,
+        "band1_cutoff_freq": 800.0,
+        "band1_q_factor": 1.5,
+        "band2_gain_db": 0.0,
+        "band2_cutoff_freq": 1500.0,
+        "band2_q_factor": 1.0,
+        "band3_gain_db": 2.0,
+        "band3_cutoff_freq": 5000.0,
+        "band3_q_factor": 1.0,
+        "high_shelf_gain_db": 4.0,
+        "high_shelf_cutoff_freq": 10000.0,
+        "high_shelf_q_factor": 0.5
+    },
+    "reason": "The EQ parameters focus on enhancing the higher frequencies to create a brighter sound for a guitar. The low shelf is cut to remove excess low-end energy, and the mid-range frequencies are kept relatively flat to maintain presence and tone clarity. A moderate boost in the lower treble frequencies, combined with a significant high shelf boost, helps to increase the perceived brightness while avoiding harshness."
+}

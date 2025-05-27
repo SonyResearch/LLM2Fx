@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.05,
+        "band1_gain": 0.1,
+        "band2_gain": 0.15,
+        "band3_gain": 0.2,
+        "band4_gain": 0.25,
+        "band5_gain": 0.3,
+        "band6_gain": 0.35,
+        "band7_gain": 0.4,
+        "band8_gain": 0.45,
+        "band9_gain": 0.5,
+        "band10_gain": 0.55,
+        "band11_gain": 0.6,
+        "band0_decay": 1.2,
+        "band1_decay": 1.8,
+        "band2_decay": 2.5,
+        "band3_decay": 3.5,
+        "band4_decay": 4.5,
+        "band5_decay": 6.0,
+        "band6_decay": 7.5,
+        "band7_decay": 9.5,
+        "band8_decay": 11.5,
+        "band9_decay": 14.0,
+        "band10_decay": 16.5,
+        "band11_decay": 19.5,
+        "mix": 0.8
+    },
+    "reason": "Designed a warm sound for piano by applying a boost to the lower and middle frequency bands, creating a rich and full-bodied character. The decay times gradually increase to emphasize the warmth and produce a sense of intimacy. The mix level is set to achieve a balanced blend between the dry signal and the reverb."
+}

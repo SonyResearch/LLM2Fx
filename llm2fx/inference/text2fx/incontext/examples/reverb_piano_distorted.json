@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.8,
+        "band1_gain": 0.6,
+        "band2_gain": 0.4,
+        "band3_gain": 0.2,
+        "band4_gain": 0.1,
+        "band5_gain": 0.05,
+        "band6_gain": 0.025,
+        "band7_gain": 0.01,
+        "band8_gain": 0.005,
+        "band9_gain": 0.0025,
+        "band10_gain": 0.00125,
+        "band11_gain": 0.000625,
+        "band0_decay": 2,
+        "band1_decay": 1.5,
+        "band2_decay": 1,
+        "band3_decay": 0.8,
+        "band4_decay": 0.6,
+        "band5_decay": 0.4,
+        "band6_decay": 0.3,
+        "band7_decay": 0.2,
+        "band8_decay": 0.1,
+        "band9_decay": 0.05,
+        "band10_decay": 0.03,
+        "band11_decay": 0.01,
+        "mix": 0.5
+    },
+    "reason": "To create a distorted sound for piano, the reverb settings apply a gradual decrease in gain for each frequency band, simulating the loss of high frequencies that is characteristic of distortion. The decay times are shorter than those for a natural reverb to emphasize the sharpness and short sustain of distorted sounds. The mix is set at 0.5 to balance the distorted sound with the dry signal."
+}

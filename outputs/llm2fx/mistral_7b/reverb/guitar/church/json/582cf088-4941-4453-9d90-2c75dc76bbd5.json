@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.0,
+        "band1_gain": 0.1,
+        "band2_gain": 0.2,
+        "band3_gain": 0.3,
+        "band4_gain": 0.4,
+        "band5_gain": 0.5,
+        "band6_gain": 0.6,
+        "band7_gain": 0.7,
+        "band8_gain": 0.8,
+        "band9_gain": 0.9,
+        "band10_gain": 1.0,
+        "band11_gain": 0.9,
+        "band0_decay": 3.0,
+        "band1_decay": 2.5,
+        "band2_decay": 2.0,
+        "band3_decay": 1.5,
+        "band4_decay": 1.2,
+        "band5_decay": 1.0,
+        "band6_decay": 0.8,
+        "band7_decay": 0.6,
+        "band8_decay": 0.4,
+        "band9_decay": 0.3,
+        "band10_decay": 0.2,
+        "band11_decay": 0.1,
+        "mix": 0.7
+    },
+    "reason": "A church-like guitar sound is often characterized by a warm, spacious, and reverberant tone. This design boosts the gain in all frequency bands to achieve a warm and full sound, while using longer decay times to create a sense of space and ambiance. The mix level is set to 0.7 to ensure a balanced level between the dry and wet signals."
+}

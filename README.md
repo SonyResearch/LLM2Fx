@@ -1,5 +1,11 @@
 # LLM2Fx: Large Language Models for Audio Effect Parameter Prediction
 
+- **Paper**: [Arxiv](#)
+- **Demo**: [llm2fx-demo](https://seungheondoh.github.io/llm2fx-demo/)
+- **Dataset**: [huggingface](https://huggingface.co/collections/seungheondoh/llm2fx-6821b961b982fe1eab1b00bf)
+- **Re-Synthesize SocialFX**: [fx-processor](https://github.com/seungheondoh/fx-processor)
+
+
 A research project that leverages Large Language Models (LLMs) to intelligently predict audio effect parameters for music production. This system bridges the gap between natural language descriptions and technical audio processing parameters.
 
 ## 📦 Installation

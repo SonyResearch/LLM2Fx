@@ -89,7 +89,18 @@ You can listen to the generated audio examples in the `./outputs/text2fx/{model_
         "band11_decay": 0.1,
         "mix": 0.7
     },
-    "reason": "A church-like guitar sound is often characterized by a warm, spacious, and reverberant tone. This design boosts the gain in all frequency bands to achieve a warm and full sound, while using longer decay times to create a sense of space and ambiance. The mix level is set to 0.7 to ensure a balanced level between the dry and wet signals."
+    "reason": "A church-like guitar sound is often characterized by a warm, spacious, and reverberant tone.
+    This design boosts the gain in all frequency bands to achieve a warm and full sound, while using longer decay times to create a sense of space and ambiance.
+    The mix level is set to 0.7 to ensure a balanced level between the dry and wet signals."
 }
+```
+
+### Embedding Extraction for Evaluation
+
+We use embedding distribution as an evaluation metric based on the fx encoder. For this purpose, we provide embedding extractor code and evaluation metrics (`./evaluation/text2fx/llm_eval.py`).
+
+```bash
+# embedding extraction code
+python llm2fx/evaluation/embeds/fx_encoder.py --target_dir outputs/text2fx --output_dir outputs/embeds --audio_extension wav
 ```
 

@@ -53,11 +53,11 @@ You can find example outputs in the `./outputs` directory, which contains the re
 
 ### Audio Examples
 
-You can listen to the generated audio examples in the `./outputs/llm2fx/{model_name}/{fx_type}/{inst_type}/{timbre_word}/audio` directory.
+You can listen to the generated audio examples in the `./outputs/text2fx/{model_name}/{fx_type}/{inst_type}/{timbre_word}/audio` directory.
 
 | Instrument | Timbre | Audio Example |
 |------------|--------|---------------|
-| Guitar | Church | <audio controls><source src="./outputs/llm2fx/mistral_7b/reverb/guitar/church/audio/example.mp3" type="audio/mpeg"></audio> |
+| Guitar | Church | [🎵 Listen to example](./outputs/text2fx/mistral_7b/reverb/guitar/church/audio/example.mp3) |
 
 
 ```json

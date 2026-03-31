@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--split", type=str, default="test", help="Split")
 parser.add_argument("--client_type", type=str, default="gemini", help="Client type")
 parser.add_argument("--output_dir", type=str, default="", help="Output directory")
-parser.add_argument("--api_key", type=str, default="AIzaSyBvjl5ANQTLyjICIUTryo4wdJmQgblhU44", help="API key")
+parser.add_argument("--api_key", type=str, default="", help="API key")
 args = parser.parse_args()
 
 VST_INFO_DICT = {}

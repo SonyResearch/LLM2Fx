@@ -1,12 +1,13 @@
 # LLM for Music Post-Production
 
+This repository contains the resources for two research papers that explore how Large Language Models can be applied to audio effect parameter prediction in music post-production. The first paper (LLM2Fx) investigates zero-shot and in-context learning approaches for text-to-parameter prediction, while the second paper (LLM2Fx-Tools) introduces a multimodal framework that fine-tunes LLMs to generate executable sequences of audio effect tool calls from audio-to-audio pairs.
+
 ![LLM for Music Post-Production](https://i.imgur.com/F9buZOL.png)
 
-This repository contains the code and resources for two research papers on applying Large Language Models to audio effect parameter prediction in music production.
 
 ---
 
-## Paper 1: LLM2Fx — Text-to-Parameter
+## LLM2Fx — Text-to-Parameter
 
 **Can Large Language Models Predict Audio Effects Parameters from Natural Language?**
 
@@ -23,7 +24,7 @@ LLM2Fx investigates whether LLMs can translate natural language descriptions int
 
 ---
 
-## Paper 2: LLM2Fx-Tools — Audio-to-Parameter via Tool Calling
+## LLM2Fx-Tools — Audio-to-Parameter via Tool Calling
 
 **LLM2Fx-Tools: Tool Calling For Music Post-Production**
 
@@ -45,17 +46,24 @@ LLM2Fx-Tools extends the LLM2Fx paradigm to **Audio-to-Parameter** prediction us
 If you use this work, please cite the relevant paper(s):
 
 ```bibtex
-@article{doh2025llm2fx,
-  title     = {Can Large Language Models Predict Audio Effects Parameters from Natural Language?},
-  author    = {Doh, Seungheon and Koo, Junghyun and Mart{\'\i}nez-Ram{\'\i}rez, Marco A. and Liao, Wei-Hsiang and Nam, Juhan and Mitsufuji, Yuki},
-  journal   = {arXiv preprint arXiv:2505.20770},
-  year      = {2025}
+@inproceedings{doh2025can,
+  title={Can large language models predict audio effects parameters from natural language?},
+  author={Doh, Seungheon and Koo, Junghyun and Mart{\'\i}nez-Ram{\'\i}rez, Marco A and Liao, Wei-Hsiang and Nam, Juhan and Mitsufuji, Yuki},
+  booktitle={2025 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)},
+  year={2025},
+  organization={IEEE}
 }
 
-@article{doh2024llm2fxtools,
-  title     = {LLM2Fx-Tools: Tool Calling For Music Post-Production},
-  author    = {Doh, Seungheon and Koo, Junghyun and Mart{\'\i}nez-Ram{\'\i}rez, Marco A. and Choi, Woosung and Liao, Wei-Hsiang and Wu, Qiyu and Nam, Juhan and Mitsufuji, Yuki},
-  journal   = {arXiv preprint arXiv:2512.01559},
-  year      = {2024}
+@inproceedings{doh2026llm2fx,
+  title={LLM2Fx-Tools: Tool Calling For Music Post-Production},
+  author={Doh*, Seungheon and Koo*, Junghyun and Mart{\'\i}nez-Ram{\'\i}rez, Marco A and Choi, Woosung and Liao, Wei-Hsiang and Wu, Qiyu and Nam, Juhan and Mitsufuji, Yuki},
+  note={* Equal contribution},
+  booktitle={The Thirteenth International Conference on Learning Representations (ICLR)},
+  year={2026}
 }
 ```
+
+
+## Contact
+
+- seungheondoh@kaist.ac.kr

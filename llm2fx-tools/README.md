@@ -82,10 +82,11 @@ Each metadata record includes:
 ## Citation
 
 ```bibtex
-@article{doh2024llm2fxtools,
-  title     = {LLM2Fx-Tools: Tool Calling For Music Post-Production},
-  author    = {Doh, Seungheon and Koo, Junghyun and Mart{\'\i}nez-Ram{\'\i}rez, Marco A. and Choi, Woosung and Liao, Wei-Hsiang and Wu, Qiyu and Nam, Juhan and Mitsufuji, Yuki},
-  journal   = {arXiv preprint arXiv:2512.01559},
-  year      = {2024}
+@inproceedings{doh2026llm2fx,
+  title={LLM2Fx-Tools: Tool Calling For Music Post-Production},
+  author={Doh*, Seungheon and Koo*, Junghyun and Mart{\'\i}nez-Ram{\'\i}rez, Marco A and Choi, Woosung and Liao, Wei-Hsiang and Wu, Qiyu and Nam, Juhan and Mitsufuji, Yuki},
+  note={* Equal contribution},
+  booktitle={The Thirteenth International Conference on Learning Representations (ICLR)},
+  year={2026}
 }
 ```

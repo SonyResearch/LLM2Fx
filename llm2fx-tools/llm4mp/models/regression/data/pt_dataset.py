@@ -92,10 +92,8 @@ class AudioFXDataset(Dataset):
 # from datasets import load_dataset
 # from torch.utils.data import DataLoader
 
-# cache_dir = "/data3/seungheon/.cache/huggingface/hub"
 # db = load_dataset("seungheondoh/medleydb_ndsp_fx", split="train")
 
-# audio_dir = "/data3/seungheon/medleydb/ndsp/fx_audio/RAW_instwise_remfx_eq_imag_loud"
 # dataset = AudioFXDataset(db, audio_dir, fx_config_type="ndsp")
 # dataloader = DataLoader(dataset, batch_size=1024, num_workers=32, shuffle=True)
 # for i in tqdm(dataloader):
